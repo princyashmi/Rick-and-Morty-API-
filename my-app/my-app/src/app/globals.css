@@ -1,0 +1,149 @@
+/*Centering Code*/
+html, body {
+  overflow: hidden;
+}
+#productShowcaseContainer {
+  display: flex;
+  flex-flow: row wrap;
+
+ 
+ 
+}
+
+#productShowcaseTitle {
+  flex: 0 0 100%; /* Let it fill the entire space horizontally */
+  height: 100px;
+  background-color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#productShowcaseDetail {
+  flex: 0 0 76%; /* ~ 2 * 33.33% */
+
+  bottom: 100px;
+   /* excluding the height of the header */
+  background-color: lightgray;
+ 
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-gallery > li {
+  flex-basis: 350px; /* width: 350px; */
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.contentDiv{
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+#productShowcaseThumbnailContainer {
+  flex: 0 0 24%;  /* ~ 33.33% */
+  height: calc(100vh - 200px); 
+  /* excluding the height of the header */
+  /* background-color: black; */
+  background-color: #ffffff;
+ bottom: 100px;
+
+}
+.imgDiv{
+  padding: 15px;
+}
+.img{
+  height: 50px;
+  width:50px;
+}
+.episodes {
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Styling */
+
+.talkingPointsHolder {
+  /* border: 1px solid black;
+  border-radius: 5px; */
+  background-color: #ffffff;
+  height: 100%;
+  overflow: scroll;
+}
+
+.genericScriptsHolder {
+    float: left;
+    overflow-y: hidden;
+background-color: #ffffff;
+padding-bottom: 49px;
+    /* width: 48%; */
+    /* margin: 0px 5px 0px 5px; */
+    /* uncomment to make the title match the ul width (see listHeader too)*/
+    /*position: relative;*/
+}
+
+.listHeader {
+       color: black;
+    background: #ffffff;
+    padding: 10px 0px 10px 0px;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    /* text-indent: 1em; */
+    position: absolute;
+    z-index: 10;
+    width: 23.5%;
+   
+    /* uncomment to make the title match the ul width (see genericScriptsHolder too)*/
+    /*width: 100%;*/
+}
+
+.scrollingList {
+    position: relative;
+    top: 31px;
+}
+
+.scrollingList li {
+  height: 20px;
+
+  font-weight: revert-layer;
+  padding: 7px;
+  margin: 11px 0 0 0;
+  list-style-type: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.selectedLi{
+  color: red;
+  background-color: #cccccc;
+}
+.allLi{
+  color: black;
+  background-color: #cccccc;
+}
+
+.episodeLoadMore
+  {
+    margin-top: 42px;
+    text-align: center;
+}
+.charCount{
+  display: flex;
+  text-align: center;
+}
